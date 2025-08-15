@@ -34,7 +34,7 @@ const ProductSection = () => {
           </h2>
           <div className="text-center relative">
             <img
-              src="/tx-body/product-bg.png"
+              src="/txbody-website/product-bg.png"
               alt="Product Background"
               sizes="100vw"
               className="object-contain z-0 absolute w-full h-full "

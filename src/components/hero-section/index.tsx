@@ -5,34 +5,34 @@ const HeroSection = () => {
   const clients = [
     {
       name: "Polymath",
-      logo: "/tx-body/clients/polymath.png",
+      logo: "/txbody-website/clients/polymath.png",
     },
     {
       name: "Boltshift",
-      logo: "/tx-body/clients/boltshift.png",
+      logo: "/txbody-website/clients/boltshift.png",
     },
     {
       name: "CoreOS",
-      logo: "/tx-body/clients/coreOs.png",
+      logo: "/txbody-website/clients/coreOs.png",
     },
     {
       name: "Layers",
-      logo: "/tx-body/clients/layers.png",
+      logo: "/txbody-website/clients/layers.png",
     },
     {
       name: "Eightball",
-      logo: "/tx-body/clients/eightball.png",
+      logo: "/txbody-website/clients/eightball.png",
     },
     {
       name: "Segment",
-      logo: "/tx-body/clients/segment.png",
+      logo: "/txbody-website/clients/segment.png",
     },
   ];
   return (
     <div className="w-full h-svh relative px-2">
       <div className="w-full aspect-[2/1] relative z-0  mx-auto max-h-1/2">
         <img
-          src="/tx-body/hero-bg.png"
+          src="/txbody-website/hero-bg.png"
           alt="Hero Image"
           sizes="100vw"
           className="absolute w-full h-full object-cover inset-0"

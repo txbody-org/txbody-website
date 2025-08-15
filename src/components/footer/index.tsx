@@ -62,7 +62,7 @@ const Footer = ({ onBackToTop }: FooterProps) => {
         </div>
       </div>
       <img
-        src="/tx-body/footer-bg.png"
+        src="/txbody-website/footer-bg.png"
         alt="Footer Background"
         width={1920}
         height={300}
