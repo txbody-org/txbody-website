@@ -8,8 +8,8 @@ import Footer from "@/components/footer";
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { SwiperRef } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/swiper-bundle.css";
+
 // Import custom styles for the home page
 export default function HomePage() {
   const swiperRef = useRef<SwiperRef | null>(null);
