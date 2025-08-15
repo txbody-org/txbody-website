@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --background: #090c0b;
+  --foreground: #fafafa;
+  --muted: #737373;
+  --primary: #00a392;
+  --primary-hover: #4fdbc8;
+  --outline-hover: #c9fbf1;
+  --secondary: #1a1a1a;
+  --destructive: #e00;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-outline-hover: var(--outline-hover);
+  --color-secondary: var(--secondary);
+  --color-destructive: var(--destructive);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Swiper styles for better mousewheel control */
+.mySwiper {
+  height: 100vh !important;
+  width: 100% !important;
+}
+
+.mySwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Pagination bullets styling */
+.mySwiper .swiper-pagination-bullet {
+  background: var(--foreground);
+  opacity: 0.5;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--foreground);
+}
+
+/* Custom Swiper Pagination */
+.mySwiper .swiper-pagination {
+  position: absolute !important;
+  right: 20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: auto !important;
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  gap: 12px !important;
+  z-index: 50 !important;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  width: 16px !important;
+  height: 2px !important;
+  border-radius: 2px !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: #00ff88 !important; /* Adjust color to match your theme */
+  width: 20px !important;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.5) !important;
+}
+
+.mySwiper .swiper-pagination-bullet:hover {
+  background: rgba(255, 255, 255, 0.6) !important;
+  transform: scaleX(1.2) !important;
+}
+
+.mySwiper .swiper-pagination-bullet-active:hover {
+  background: #00ff88 !important;
+}
