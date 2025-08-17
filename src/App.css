@@ -53,9 +53,7 @@ body {
 }
 
 .mySwiper .swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100svh;
   min-height: 100vh;
 }
 
@@ -109,4 +107,8 @@ body {
 
 .mySwiper .swiper-pagination-bullet-active:hover {
   background: #00ff88 !important;
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) transparent;
 }

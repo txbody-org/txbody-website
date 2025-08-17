@@ -25,7 +25,7 @@ const ProductSection = () => {
     },
   ];
   return (
-    <div className="container mx-auto h-full w-full px-2 pt-10">
+    <div className="container mx-auto h-full w-full px-2 py-10">
       <div className="flex flex-col justify-center h-full z-10 ">
         <div className="flex flex-col items-center relative">
           <p className="uppercase">[ Product ]</p>

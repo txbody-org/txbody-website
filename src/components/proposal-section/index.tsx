@@ -28,7 +28,7 @@ const ProposalSection = () => {
     },
   ];
   return (
-    <div className="container mx-auto h-full w-full px-2 ">
+    <div className="container mx-auto h-full w-full px-10 ">
       <div className="flex flex-col justify-center h-full  z-10 relative overflow-y-clip pt-10">
         <img
           src="/txbody-website/proposal-bg.png"
