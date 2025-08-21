@@ -40,15 +40,16 @@ export default function Home2() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-full h-full flex items-center justify-center">
+            <div className="w-full h-full flex items-center justify-center flex-col">
               <ProposalSection />
+              <Footer />
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
-      <div id="footer">
+      {/* <div id="footer">
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 }

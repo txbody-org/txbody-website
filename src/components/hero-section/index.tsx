@@ -1,4 +1,3 @@
-import { ArrowUpRightIcon } from "@phosphor-icons/react";
 import { Button } from "../ui/button";
 
 const HeroSection = () => {
@@ -34,13 +33,12 @@ const HeroSection = () => {
         <img
           src="/txbody-website/hero-bg.png"
           alt="Hero Image"
-          sizes="100vw"
-          className="absolute w-full h-full object-cover inset-0"
+          className="absolute w-full h-full object-contain inset-0"
         />
       </div>
       <div className="absolute h-full w-full flex flex-col justify-center items-center z-10 inset-0">
         <div className="flex-1"></div>
-        <div className="h-2/5 flex flex-col justify-between">
+        <div className="h-2/5 flex flex-col justify-center">
           <div>
             <h1 className="max-w-[600px] text-4xl md:text-6xl text-center font-medium">
               Building tools for a decentralized world.
@@ -50,17 +48,17 @@ const HeroSection = () => {
               generation of blockchain applications.
             </p>
           </div>
-          <div className="mt-8 flex items-center justify-center gap-4">
+          <div className="mt-10 flex items-center justify-center gap-4">
             <Button variant="default" size="lg" className="text-sm">
-              EXPLORE PROJECTS
+              Fund 14 Proposals
             </Button>
-            <Button
+            {/*<Button
               variant="outline"
               size="lg"
               className="text-sm flex items-center gap-2 md:gap-4 hover:bg-outline-hover"
             >
               VIEW ON GITHUB <ArrowUpRightIcon size={"18"} />
-            </Button>
+            </Button>*/}
           </div>
         </div>
         <div className="flex-1 flex flex-col items-center justify-end pb-10 gap-5">

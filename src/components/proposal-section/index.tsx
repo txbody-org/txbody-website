@@ -16,19 +16,19 @@ const ProposalSection = () => {
       description: "Reusable components for voting dashboards",
       link: "#voting-ui-kit",
     },
-    {
-      name: "Tx Explorer Lite",
-      description: "Minimal block explorer for dApp integration",
-      link: "#tx-explorer-lite",
-    },
-    {
-      name: "Governance API",
-      description: "RESTful API for governance metadata",
-      link: "#governance-analytics",
-    },
+    // {
+    //   name: "Tx Explorer Lite",
+    //   description: "Minimal block explorer for dApp integration",
+    //   link: "#tx-explorer-lite",
+    // },
+    // {
+    //   name: "Governance API",
+    //   description: "RESTful API for governance metadata",
+    //   link: "#governance-analytics",
+    // },
   ];
   return (
-    <div className="container mx-auto h-full w-full px-10 ">
+    <div className="container mx-auto flex-1 w-full px-10 ">
       <div className="flex flex-col justify-center h-full  z-10 relative overflow-y-clip pt-10">
         <img
           src="/txbody-website/proposal-bg.png"
@@ -42,7 +42,7 @@ const ProposalSection = () => {
             Fund14 Proposals
           </h2>
         </div>
-        <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 divide-y-2 md:divide-y-0 md:divide-x-2 divide-[#404040]/25 mt-10">
           {proposalData.map((proposal, index) => (
             <ProposalCard
               key={index}
@@ -69,9 +69,9 @@ const ProposalCard = ({
   components?: React.ReactNode;
 }) => {
   return (
-    <div className="flex flex-col gap-2 md:gap-4 md:flex-row justify-between md:items-center border-b-2 border-[#404040]/25 py-5 md:py-10 ">
+    <div className="flex flex-col gap-2 justify-between py-5 px-10 ">
       <h3 className="text-xl font-semibold flex-1">{name}</h3>
-      <p className="text-muted flex-1 md:text-center">{description}</p>
+      <p className="text-muted flex-1 ">{description}</p>
       <div className="flex-1 flex justify-end">
         {components ? (
           components

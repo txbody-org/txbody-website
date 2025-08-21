@@ -25,14 +25,14 @@ const ProductSection = () => {
     },
   ];
   return (
-    <div className="container mx-auto h-full w-full px-2 py-10">
+    <div className="container mx-auto h-full w-full px-2 pt-16">
       <div className="flex flex-col justify-center h-full z-10 ">
-        <div className="flex flex-col items-center relative">
+        <div className="flex flex-col items-center relative h-full">
           <p className="uppercase">[ Product ]</p>
           <h2 className="text-3xl md:text-5xl font-medium mt-1 md:mt-3">
             Sutra SDK
           </h2>
-          <div className="text-center relative">
+          <div className="text-center relative flex-1">
             <img
               src="/txbody-website/product-bg.png"
               alt="Product Background"

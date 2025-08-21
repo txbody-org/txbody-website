@@ -91,7 +91,7 @@ export default function HomePage() {
       isSettledOnLastSlide,
       isMousewheelEnabled,
       scrollAttempts,
-    ]
+    ],
   );
 
   // Handle scroll events to detect when user scrolls back up from footer
@@ -141,22 +141,7 @@ export default function HomePage() {
   }, [handleWheel, handleScroll]);
 
   // Function to go back to top
-  const goToTop = useCallback(() => {
-    if (swiperInstance) {
-      // Re-enable mousewheel if it was disabled
-      if (!isMousewheelEnabled) {
-        setIsMousewheelEnabled(true);
-        swiperInstance?.mousewheel.enable();
-      }
 
-      swiperInstance.slideTo(0);
-      setScrollAttempts(0);
-      setIsSettledOnLastSlide(false);
-    }
-
-    // Scroll to the top of the page
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [swiperInstance, isMousewheelEnabled]);
   return (
     <div className="overflow-auto relative" ref={containerRef}>
       <Swiper
@@ -197,7 +182,7 @@ export default function HomePage() {
         </SwiperSlide>
       </Swiper>
       <div id="footer">
-        <Footer onBackToTop={goToTop} />
+        <Footer />
       </div>
     </div>
   );

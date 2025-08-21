@@ -1,28 +1,39 @@
-import { ArrowUpRightIcon, CaretUpIcon } from "@phosphor-icons/react";
+// interface FooterProps {
+//   onBackToTop?: () => void;
+// }
 
-import { Button } from "../ui/button";
+import {
+  DiscordLogoIcon,
+  GithubLogoIcon,
+  TwitterLogoIcon,
+} from "@phosphor-icons/react";
 
-interface FooterProps {
-  onBackToTop?: () => void;
-}
-
-const Footer = ({ onBackToTop }: FooterProps) => {
+const Footer = () => {
   const info = [
     {
       name: "GitHub",
       link: "#",
+      icon: <GithubLogoIcon name="github" size={32} />,
     },
     {
       name: "Discord",
       link: "#",
+      icon: <DiscordLogoIcon name="discord" size={32} />,
     },
-    { name: "Contact Us", link: "#" },
-    { name: "X(Twitter)", link: "#" },
+    {
+      name: "X(Twitter)",
+      link: "#",
+      icon: <TwitterLogoIcon name="twitter" size={32} />,
+    },
   ];
   return (
-    <div className="container mx-auto px-2 relative overflow-hidden">
-      <div className="py-20">
-        <p className="uppercase">[ CONTACT ]</p>
+    <div className="container mx-auto px-2 relative overflow-hidden border-t-2 border-[#404040]/25">
+      {/*<div className="py-20">
+        <img
+          src="/txbody-website/tx-icon.png"
+          alt="TxBody Logo"
+          className="w-16 h-16"
+        />
 
         <div className="mt-6 flex flex-col md:flex-row justify-between gap-4">
           <div className="flex-1">
@@ -43,22 +54,26 @@ const Footer = ({ onBackToTop }: FooterProps) => {
             ))}
           </div>
         </div>
-      </div>
+      </div>*/}
       {/* copy right */}
-      <div className="flex justify-between items-center">
-        <div className="py-10 text-muted">
-          <p className="text-sm">© {new Date().getFullYear()} TxBody.</p>
-          <p>Built with ❤️ for the Elixir community.</p>
+      <div className="flex justify-between items-end">
+        <div className="py-10 text-muted space-y-5">
+          <img
+            src="/txbody-website/tx-icon.png"
+            alt="TxBody Logo"
+            className="w-16 h-16"
+          />
+          <div>
+            <p className="text-sm">© {new Date().getFullYear()} TxBody.</p>
+            <p className="mt-4">Built with ❤️ for the Elixir community.</p>
+          </div>
         </div>
-        <div>
-          <Button
-            variant={"ghost"}
-            size={"lg"}
-            onClick={onBackToTop}
-            className="z-10! relative"
-          >
-            Back to top <CaretUpIcon size={"18"} />
-          </Button>
+        <div className="flex gap-2 py-10">
+          {info.map((item, index) => (
+            <a href={item.link} className="text-lg flex gap-2" key={index}>
+              {item.icon}
+            </a>
+          ))}
         </div>
       </div>
       <img
@@ -66,7 +81,7 @@ const Footer = ({ onBackToTop }: FooterProps) => {
         alt="Footer Background"
         width={1920}
         height={300}
-        className="z-0 absolute -bottom-1/2 left-0 w-full h-auto object-cover"
+        className="z-0 absolute -bottom-1/2 left-0 w-full h-auto object-cover object-top-left max-h-[220px]"
       />
     </div>
   );
