@@ -69,7 +69,7 @@ const ProposalCard = ({
   components?: React.ReactNode;
 }) => {
   return (
-    <div className="flex flex-col gap-2 justify-between py-5 px-10 ">
+    <div className="flex flex-col gap-2 justify-between py-5 md:px-10 ">
       <h3 className="text-xl font-semibold flex-1">{name}</h3>
       <p className="text-muted flex-1 ">{description}</p>
       <div className="flex-1 flex justify-end">
