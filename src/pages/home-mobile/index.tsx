@@ -5,7 +5,7 @@ import ProposalSection from "@/components/proposal-section";
 
 const HomePageMobile = () => {
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto space-y-4 ">
       <HeroSection />
       <ProductSection />
       <ProposalSection />

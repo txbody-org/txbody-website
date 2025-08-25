@@ -1,4 +1,6 @@
+import { ExternalLink } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Button } from "../ui/button";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -23,7 +25,7 @@ const Header = () => {
         <div className="flex gap-x-4 text-base">
           <a
             href="https://github.com/txbody-org"
-            className="text-lg"
+            className="text-lg hidden md:block"
             target="_blank"
           >
             <svg
@@ -53,6 +55,20 @@ const Header = () => {
               </g>
             </svg>
           </a>
+          <Button
+            variant="outline"
+            size="lg"
+            className="text-sm flex md:hidden gap-2 items-center backdrop-blur-sm"
+            asChild
+          >
+            <a
+              href="https://projectcatalyst.io/proposers/TxBody"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fund 14 <ExternalLink size={"16"} />
+            </a>
+          </Button>
         </div>
       </div>
     </header>
