@@ -21,7 +21,11 @@ const Header = () => {
       <div className="container p-4 flex justify-between items-center mx-auto">
         <img src="/txbody-website/logo.png" alt="Logo" className="h-9" />
         <div className="flex gap-x-4 text-base">
-          <a href="/" className="text-lg">
+          <a
+            href="https://github.com/txbody-org"
+            className="text-lg"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="42"

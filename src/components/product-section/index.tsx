@@ -7,25 +7,26 @@ const ProductSection = () => {
     {
       name: "Transaction Building",
       description:
-        "Comprehensive blockchain testing with built-in scenarios and chain simulation.",
+        "Build complex transactions in minutes, not days. Simple APIs that handle the blockchain complexity for you.",
     },
     {
       name: "E2E Testing Framework",
       description:
-        "Seamless integration with Phoenix LiveView for building real-time blockchain applications.",
+        "Ship with confidence using our complete testing suite. Simulate real blockchain scenarios before deployment.",
     },
     {
       name: "BEAM Virtual Machine",
-      description: "Build fault-tolerant blockchain apps on Erlang’s BEAM VM.",
+      description:
+        "Built on battle-tested BEAM architecture. Handle millions of concurrent transactions with 99.9% uptime guarantees.",
     },
     {
       name: "Phoenix LiveView Integration",
       description:
-        "Build complex UTXO transactions using Elixir’s functional power.",
+        "Build modern, real-time blockchain UIs with Phoenix LiveView. Native WebSocket support for live transaction updates.",
     },
   ];
   return (
-    <div className="container mx-auto h-full w-full px-2 pt-16">
+    <div className="container mx-auto w-full px-2 pt-16">
       <div className="flex flex-col justify-center h-full z-10 ">
         <div className="flex flex-col items-center relative h-full">
           <p className="uppercase">[ Product ]</p>
@@ -40,9 +41,8 @@ const ProductSection = () => {
               className="object-contain z-0 absolute w-full h-full "
             />
             <p className="mt-4 md:mt-8 text-muted max-w-[876px] text-center text-base md:text-xl">
-              Lightweight developer SDK for building governance-enabled dApps on
-              Cardano. Includes proposal lifecycle, identity, and voting
-              logic—ready to integrate.
+              A powerful Elixir SDK framework for building applications on
+              Cardano.
             </p>
             <div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6 mt-5 md:mt-10 max-w-[793px] mx-auto">
@@ -58,8 +58,15 @@ const ProductSection = () => {
                 variant="outline"
                 size="lg"
                 className="mt-10 z-20 text-sm relative"
+                asChild
               >
-                VIEW ON GITHUB <ArrowUpRightIcon size={"18"} />
+                <a
+                  href="https://sutra.txbody.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  VIEW MORE <ArrowUpRightIcon size={"18"} />
+                </a>
               </Button>
             </div>
           </div>

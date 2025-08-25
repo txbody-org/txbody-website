@@ -1,32 +1,6 @@
 import { Button } from "../ui/button";
 
 const HeroSection = () => {
-  const clients = [
-    {
-      name: "Polymath",
-      logo: "/txbody-website/clients/polymath.png",
-    },
-    {
-      name: "Boltshift",
-      logo: "/txbody-website/clients/boltshift.png",
-    },
-    {
-      name: "CoreOS",
-      logo: "/txbody-website/clients/coreOs.png",
-    },
-    {
-      name: "Layers",
-      logo: "/txbody-website/clients/layers.png",
-    },
-    {
-      name: "Eightball",
-      logo: "/txbody-website/clients/eightball.png",
-    },
-    {
-      name: "Segment",
-      logo: "/txbody-website/clients/segment.png",
-    },
-  ];
   return (
     <div className="w-full h-svh relative px-2">
       <div className="w-full aspect-[2/1] relative z-0  mx-auto max-h-1/2">
@@ -49,8 +23,14 @@ const HeroSection = () => {
             </p>
           </div>
           <div className="mt-10 flex items-center justify-center gap-4">
-            <Button variant="default" size="lg" className="text-sm">
-              Fund 14 Proposals
+            <Button variant="default" size="lg" className="text-sm" asChild>
+              <a
+                href="https://projectcatalyst.io/proposers/TxBody"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fund 14 Proposals
+              </a>
             </Button>
             {/*<Button
               variant="outline"
@@ -62,11 +42,11 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="flex-1 flex flex-col items-center justify-end pb-10 gap-5">
-          <p className="text-muted text-center">
+          {/* <p className="text-muted text-center">
             Trusted by over three million developers and teams
-          </p>
+          </p> */}
           {/* <Marquee pauseOnHover className="[--duration:5s] gap-5"> */}
-          <div className="flex gap-5 opacity-25 flex-wrap justify-center">
+          {/* <div className="flex gap-5 opacity-25 flex-wrap justify-center">
             {clients.map((client) => (
               <img
                 key={client.name}
@@ -77,7 +57,7 @@ const HeroSection = () => {
                 className="h-8"
               />
             ))}
-          </div>
+          </div> */}
           {/* </Marquee> */}
         </div>
       </div>

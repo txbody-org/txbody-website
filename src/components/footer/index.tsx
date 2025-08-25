@@ -12,22 +12,22 @@ const Footer = () => {
   const info = [
     {
       name: "GitHub",
-      link: "#",
+      link: "https://github.com/txbody-org",
       icon: <GithubLogoIcon name="github" size={32} />,
     },
     {
       name: "Discord",
-      link: "#",
+      link: "https://discord.gg/BpmNRaha",
       icon: <DiscordLogoIcon name="discord" size={32} />,
     },
     {
       name: "X(Twitter)",
-      link: "#",
+      link: "https://x.com/txbodyio?t=1XLkk-aOY2Mf2toVcemiFw&s=09",
       icon: <TwitterLogoIcon name="twitter" size={32} />,
     },
   ];
   return (
-    <div className="container mx-auto px-2 relative overflow-hidden border-t-2 border-[#404040]/25">
+    <div className="container mx-auto px-2 relative overflow-hidden border-t-2 border-[#404040]/25 lg:mt-32">
       {/*<div className="py-20">
         <img
           src="/txbody-website/tx-icon.png"
@@ -70,7 +70,11 @@ const Footer = () => {
         </div>
         <div className="flex gap-2 py-10">
           {info.map((item, index) => (
-            <a href={item.link} className="text-lg flex gap-2" key={index}>
+            <a
+              href={item.link}
+              className="text-lg flex gap-2 z-10 hover:-translate-y-1 duration-300 ease-in-out "
+              key={index}
+            >
               {item.icon}
             </a>
           ))}
