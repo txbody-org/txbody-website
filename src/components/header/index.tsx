@@ -21,7 +21,7 @@ const Header = () => {
       }`}
     >
       <div className="container p-4 flex justify-between items-center mx-auto">
-        <img src="/txbody-website/logo.png" alt="Logo" className="h-9" />
+        <img src="/logo.png" alt="Logo" className="h-9" />
         <div className="flex gap-x-4 text-base">
           <a
             href="https://github.com/txbody-org"

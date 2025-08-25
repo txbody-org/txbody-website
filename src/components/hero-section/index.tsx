@@ -5,7 +5,7 @@ const HeroSection = () => {
     <div className="w-full h-svh relative px-2">
       <div className="w-full aspect-[2/1] relative z-0  mx-auto max-h-1/2">
         <img
-          src="/txbody-website/hero-bg.png"
+          src="/hero-bg.png"
           alt="Hero Image"
           className="absolute w-full h-full object-contain inset-0"
         />

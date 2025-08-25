@@ -30,7 +30,7 @@ const Footer = () => {
     <div className="container mx-auto px-2 relative overflow-hidden border-t-2 border-[#404040]/25 lg:mt-32">
       {/*<div className="py-20">
         <img
-          src="/txbody-website/tx-icon.png"
+          src="/tx-icon.png"
           alt="TxBody Logo"
           className="w-16 h-16"
         />
@@ -58,11 +58,7 @@ const Footer = () => {
       {/* copy right */}
       <div className="flex justify-between items-end">
         <div className="py-10 text-muted space-y-5">
-          <img
-            src="/txbody-website/tx-icon.png"
-            alt="TxBody Logo"
-            className="w-16 h-16"
-          />
+          <img src="/tx-icon.png" alt="TxBody Logo" className="w-16 h-16" />
           <div>
             <p className="text-sm">© {new Date().getFullYear()} TxBody.</p>
             <p className="mt-4">Built with ❤️ for the Elixir community.</p>
@@ -81,7 +77,7 @@ const Footer = () => {
         </div>
       </div>
       <img
-        src="/txbody-website/footer-bg.png"
+        src="/footer-bg.png"
         alt="Footer Background"
         width={1920}
         height={300}
