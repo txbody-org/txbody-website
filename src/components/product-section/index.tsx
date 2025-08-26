@@ -1,6 +1,10 @@
 import { ArrowUpRightIcon } from "@phosphor-icons/react";
 import { Button } from "../ui/button";
 import SDKCard from "./SDKCard";
+import TXBuildingIcon from "./icons/TxBuilding";
+import E2EEIcon from "./icons/E2EEIcon";
+import BeamIcon from "./icons/BeamIcon";
+import PhoenixIcon from "./icons/PhoenicIcon";
 
 const ProductSection = () => {
   const sdks = [
@@ -8,21 +12,25 @@ const ProductSection = () => {
       name: "Transaction Building",
       description:
         "Build complex transactions in minutes, not days. Simple APIs that handle the blockchain complexity for you.",
+      icon: <TXBuildingIcon />,
     },
     {
       name: "E2E Testing Framework",
       description:
         "Ship with confidence using our complete testing suite. Simulate real blockchain scenarios before deployment.",
+      icon: <E2EEIcon />,
     },
     {
       name: "BEAM Virtual Machine",
       description:
         "Built on battle-tested BEAM architecture. Handle millions of concurrent transactions with 99.9% uptime guarantees.",
+      icon: <BeamIcon />,
     },
     {
       name: "Phoenix LiveView Integration",
       description:
         "Build modern, real-time blockchain UIs with Phoenix LiveView. Native WebSocket support for live transaction updates.",
+      icon: <PhoenixIcon />,
     },
   ];
   return (
@@ -51,6 +59,7 @@ const ProductSection = () => {
                     key={index}
                     name={sdk.name}
                     description={sdk.description}
+                    icon={sdk.icon}
                   />
                 ))}
               </div>
